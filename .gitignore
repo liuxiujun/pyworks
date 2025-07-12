@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / compiled files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Configuration and sensitive files
+config.ini
+settings.py # If it contains sensitive information like API keys
+credentials.json
+.env # For environment variables
+
+# Data files (if generated or large)
+*.csv
+*.json
+*.sqlite3
+data/ # If it contains generated data
+
+# IoT specific files
+# Example: Device-specific configuration or temporary data
+device_config.json
+sensor_data.txt

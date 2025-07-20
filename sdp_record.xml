@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record>
+  <!-- Service Class ID List: HID -->
+  <attribute id="0x0001">
+    <sequence>
+      <uuid value="0x1124"/>
+    </sequence>
+  </attribute>
+
+  <!-- Protocol Descriptor List: L2CAP (PSM 0x11) + HIDP (PSM 0x13) -->
+  <attribute id="0x0004">
+    <sequence>
+      <sequence>
+        <uuid value="0x0100"/>
+        <uint16 value="0x0011"/>
+      </sequence>
+      <sequence>
+        <uuid value="0x0011"/>
+        <uint16 value="0x0013"/>
+      </sequence>
+    </sequence>
+  </attribute>
+
+  <!-- Public Browse Group List -->
+  <attribute id="0x0005">
+    <sequence>
+      <uuid value="0x1002"/>
+    </sequence>
+  </attribute>
+
+  <!-- Language Base Attribute ID List -->
+  <attribute id="0x0006">
+    <sequence>
+      <uint16 value="0x656e"/>
+      <uint16 value="0x006a"/>
+      <uint16 value="0x0100"/>
+    </sequence>
+  </attribute>
+
+  <!-- Profile Descriptor List: HID Version 1.0 -->
+  <attribute id="0x0009">
+    <sequence>
+      <sequence>
+        <uuid value="0x1124"/>
+        <uint16 value="0x0100"/>
+      </sequence>
+    </sequence>
+  </attribute>
+
+  <!-- Service Name, Provider, Description -->
+  <attribute id="0x0100"><text value="Example HID Device"/></attribute>
+  <attribute id="0x0101"><text value="USB > BT Keyboard"/></attribute>
+  <attribute id="0x0102"><text value="Raspberry Pi"/></attribute>
+
+  <!-- HID Device Release Number -->
+  <attribute id="0x0200"><uint16 value="0x0100"/></attribute>
+
+  <!-- HID Parser Version & Subclass -->
+  <attribute id="0x0201"><uint8 value="0x00"/></attribute>
+  <attribute id="0x0202"><uint8 value="0x03"/></attribute>
+
+  <!-- Country Code -->
+  <attribute id="0x0203"><uint8 value="0x40"/></attribute>
+
+  <!-- Virtual Cable -->
+  <attribute id="0x0204"><boolean value="true"/></attribute>
+
+  <!-- Remote Wake -->
+  <attribute id="0x0205"><boolean value="false"/></attribute>
+
+  <!-- Normally Connectable -->
+  <attribute id="0x0206"><boolean value="true"/></attribute>
+
+  <!-- HID Descriptor List (Report Descriptor) -->
+  <attribute id="0x0026">
+    <sequence>
+      <sequence>
+        <uint8 value="0x22"/>
+        <text encoding="hex" value="05010906A10185010905E00929E715002501750195028101950375017501050919012905150025018100C0
+05010902A1010901A10085010991B0250195018105EA750295038101C0"/>
+      </sequence>
+    </sequence>
+  </attribute>
+  <!-- HID Language (English, US) -->
+  <attribute id="0x0208">
+    <sequence>
+      <sequence>
+        <uint16 value="0x0409"/>
+        <uint16 value="0x0100"/>
+      </sequence>
+    </sequence>
+  </attribute>
+
+  <!-- Battery Power & Profile Version -->
+  <attribute id="0x0209"><uint16 value="0x0640"/></attribute>
+  <attribute id="0x020A"><uint16 value="0x0320"/></attribute>
+</record>
